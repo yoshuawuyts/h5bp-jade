@@ -34,23 +34,22 @@ html(class='no-js')
           <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>
           to improve your experience.
     
-    .scripts
-      //- Angular with fallback to native (uncomment to activate)
-      //- script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.2/angular.min.js")
-      //- script window.angular || document.write('<script src="js/angular.min.js"><\/script>')
-      
-      //- jQuery with fallback to native (uncomment to activate)
-      //- script(src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
-      //- script window.jQuery || document.write('<script src="js/vendor/jquery-2.0.3.min.js"><\\/script>')
-      
-      //- Livereload (uncomment to activate)
-      //- script document.write('<script src="' + (location.protocol || 'http:') + '//' + (location.hostname || 'localhost') + ':35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
-      
-      //- Include your scripts here
-      script(type="text/javascript", src="/concat/production.js")
-      
-      script.
-        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src='//www.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
+    //- Angular with fallback to native (uncomment to activate)
+    script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js")
+    //- script window.angular || document.write('<script src="js/angular.min.js"><\/script>')
+    
+    //- jQuery with fallback to native (uncomment to activate)
+    //- script(src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    //- script window.jQuery || document.write('<script src="js/vendor/jquery-2.0.3.min.js"><\\/script>')
+    
+    //- Livereload
+    script document.write('<script src="' + (location.protocol || 'http:') + '//' + (location.hostname || 'localhost') + ':35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
+    
+    //- Include your scripts here
+    script(type="text/javascript", src="/concat/production.js")
+    
+    script.
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));  
