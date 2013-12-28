@@ -14,7 +14,7 @@ html(class='no-js')
     
     //- Title and description
     title Your appName
-    meta(name='description', content='A sails application')
+    meta(name='description', content='My application')
 
     //- Viewport mobile tag for sensible mobile support
     meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1")
@@ -42,6 +42,9 @@ html(class='no-js')
       //- jQuery with fallback to native (uncomment to activate)
       //- script(src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
       //- script window.jQuery || document.write('<script src="js/vendor/jquery-2.0.3.min.js"><\\/script>')
+      
+      //- Livereload
+      //- script document.write('<script src="' + (location.protocol || 'http:') + '//' + (location.hostname || 'localhost') + ':35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
       
       //- Include your scripts here
       script(type="text/javascript", src="/concat/production.js")
